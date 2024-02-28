@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root {
+    /*  Colors */
+    --primary-color: #FFA500;
+    --secondary-color: #F28705;
+    --third-color: #BF6B04;
+    --brown-color: #402401;
+    --black-color: #0D0D0D;
+    --white-color: #fff;
+    --darker-gray-color: #484848;
+    --dark-color: #737373;
+    --middle-gray-color: #969696;
+    --light-gray-color: #e1e1e1b1;
+    --background-color: #f0f0f0;
+
+
+    /*  Fonts  */
+    --font-family-link: 'Montserrat', sans-serif;
+    --font-family-payment: 'Oxygen', sans-serif;
+    --font-size-link: 1.5rem;
+    --font-weight-link: 300;
+
+    /* Shadows */
+    --shadow-settings-large: 1.5rem 1.5rem .5rem rgba(0,0,0,.212);
+    --shadow-settings-medium: 0.8rem 0.1rem 1rem rgba(0,0,0,.212);
+    --shadow-settings-small: .25rem .25rem .25rem rgba(0,0,0,.212);
+    --shadow-color: rgba(0,0,0,.212);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family-link);
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    overflow: hidden;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* position: absolute; */
+    width: 80%;
+    height: 80vh;
+    background-color: var(--white-color);
+    display: flex;
+    box-shadow: var(--shadow-settings-large);
+    border-radius: 1rem
+
+}
+
+.payment {
+    /* opacity: 60%; */
+    width: 65%;
+    height: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* position: absolute; */
+}
+
+.payment-header {
+    /* position: relative; */
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: var(--shadow-settings-medium);
+    z-index: -1;
+
+}
+
+.payment-header img {
+    opacity: 80%;
+    margin-top: 2rem ;
+    margin-bottom: 2rem;
+    width: 23rem;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.payment-form {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-heading {
+    position: relative;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    opacity: 60%;
+}
+
+.form-heading h1 {
+    font-weight: 400;
+}
+
+.form-payment-method {
+    display: flex;
+    height: 5rem;
+    width: 30%;
+    justify-content: space-between;
+}
+
+#card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius:.75rem;
+    border-bottom-left-radius: .75rem;
+}
+
+#paypal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+}
+
+.form-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 5rem;
+    background-color: var(--light-gray-color);
+    opacity: 60%;
+}
+
+
+.form-img-container a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-payment-method div:hover {
+    background-color: var(--white-color);
+}
+
+.form-img {
+    opacity: 100%;
+    width: 2.5rem;
+    padding-bottom: 5px;
+}
+
+.img-title {
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+.form {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f38c;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    width: 100%;
+}
+
+.card-panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.input-box {
+    width: 75%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input-box label {
+    text-transform: capitalize;
+    color: var(--dark-color);
+    margin-bottom: .5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.input-box input {
+    border: none;
+    width: 90%;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.input-box input::placeholder {
+    text-transform: uppercase;
+    opacity: 50%;
+    color: #ffa600be;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: .5rem;
+}
+.input-box-aside {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-box-aside input {
+    width: 80%;
+}
+
+.form-header {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.form-button {
+    display: flex;
+    align-items: center;
+}
+
+.form-button button {
+    background-color: var(--darker-gray-color);
+    height: 3rem;
+    width: 9rem;
+    font-size: 1.5rem;
+    padding: .4rem 1rem;
+    border: none;
+    box-shadow: var(--shadow-settings-small);
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+.form-button button:hover {    
+    font-weight: 200;
+    background-color: var(--light-gray-color);
+}
+
+.form-button button a {
+    font-weight: 650;
+    color: var(--white-color);
+}
+

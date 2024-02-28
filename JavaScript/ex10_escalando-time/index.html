@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escale seu time dos sonhos</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <h1>Monte seu time perfeito e comece a jogar!</h1>
+    <br>
+    <h2>Adicione um jogador ao seu time</h2>
+    <label for="player-name">Nome do jogador: </label>
+    <input type="text" name="player-name" id="player-name">
+
+    <label for="add-player-number">Número do jogador: </label>
+    <input type="text" name="add-player-number" id="add-player-number">  
+
+    <label for="player-position">Posição: </label>
+    <input type="text" name="player-position" id="player-position">
+    <br><br>
+
+    <button onclick="addPlayer()">Adicionar Jogador</button>
+
+    <br><br>
+
+    <h2>Remova um jogador do seu time</h2>
+
+    <label for="remove-player-numer">Número do jogador a ser removido</label>
+    <input type="text" name="remove-player-numer" id="remove-player-numer">
+    <br><br>
+
+    <button onclick="removePlayer()">Remova um jogador</button>
+
+    <section id="team">
+        <h3 id="team-title">Time</h3>
+        <ul id="team-list">
+
+        </ul>
+    </section>
+    
+
+
+
+
+</body>
+</html>
